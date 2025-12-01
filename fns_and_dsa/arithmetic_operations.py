@@ -7,9 +7,8 @@ def perform_operation(num1, num2, operation):
         num1 * num2
     elif operation == "divide":
         if num2 == 0:
-            print('Cannot devide by 0')
+            return print('Cannot devide by 0')
         else:    
             num1 / num2
 
 
-            
