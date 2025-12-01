@@ -1,10 +1,15 @@
 def perform_operation(num1, num2, operation):
-    match operation:
-        case "add":
-            num1 + num2
-        case "subtract":
-            num1 - num2
-        case "multiply":
-            num1 * num2
-        case "divide":
+    if operation == "add":
+        num1 + num2
+    elif operation == "subtract":
+        num1 - num2
+    elif operation == "multiply":
+        num1 * num2
+    elif operation == "divide":
+        if num2 == 0:
+            print('Cannot devide by 0')
+        else:    
             num1 / num2
+
+
+            
